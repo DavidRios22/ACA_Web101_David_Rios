@@ -1,6 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #02111B;
+    width: 98%;
   }
   /* What kind of selector is this? */
   .logo {
@@ -24,9 +25,9 @@ body {
 
   /* This is an element within and element selector */ 
   nav > a {
-    margin: auto 2% auto 2%;
+    margin: auto .5% auto .5%;
     height: 10%;
-    width: 15%;
+    width: 11%;
     color: #FCFCFC;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
@@ -38,17 +39,17 @@ body {
   }
 
   .has-border {
-    border-radius: 25px;
+    border-radius: 100px;
     border: 2px solid #5D737E;
     background: none;
-    padding: 0% 0% 2% 0%;
+    padding: 0% 0% 1.75% 0%;
   }
 
   nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding-right: 2%;
+    padding-right: 0% 0% 0% 0%;
     
   }
   /* This is an ID selector */
@@ -92,7 +93,7 @@ body {
     border-color: #5D737E;
     background: transparent;
     padding: 0px;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
     text-align: center;
     color: #FCFCFC;
     letter-spacing: 16px;
