@@ -1,0 +1,100 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #02111B;
+  }
+  /* What kind of selector is this? */
+  .logo {
+    width: 150px;
+    height: 100px;
+    margin: 0px;
+  } 
+
+  header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+  }
+
+  main {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+  }
+
+  /* This is an element within and element selector */ 
+  nav > a {
+    margin: auto 2% auto 2%;
+    height: 10%;
+    width: 15%;
+    color: #FCFCFC;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    padding: 200px;
+    text-align: center;
+    border: 2px solid #FCFCFC;
+  }
+
+  .has-border {
+    border-radius: 25px;
+    border: 2px solid #5D737E;
+    background: none;
+    padding: 0% 0% 2% 0%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 2%;
+    
+  }
+  /* This is an ID selector */
+  #profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 15% auto;
+    grid-column: 2/3;
+  }
+
+  h1 {
+    color:#FCFCFC;
+    grid-column: 2/3;
+    margin: 3% auto;
+    border-bottom: 2px solid #5D737E;;
+  }
+
+  h2 {
+    grid-column: 2/3;
+    margin: 3% auto;
+    font-style: italic;
+    color: #FCFCFC;
+  }
+
+  .small-text {
+    grid-column: 2/3;
+    color: #FCFCFC;
+    font-size: 10px;
+    margin: 3% auto;
+  }
+
+  button {
+    grid-column: 2/3;
+    margin: 3% auto;
+    width: 70%;
+    height: 15%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    border-color: #5D737E;
+    background: transparent;
+    padding: 0px;
+    padding-bottom: 5%;
+    text-align: center;
+    color: #FCFCFC;
+    letter-spacing: 16px;
+    font-style: italic;
+  }
