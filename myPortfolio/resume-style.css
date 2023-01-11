@@ -1,0 +1,114 @@
+.container {  display: grid;
+    grid-template-columns: 0.5fr 0.3fr 1fr 0.5fr;
+    grid-template-rows: 19% 10% 6% 10% 6% 18% 6% 14%;
+    column-gap: 50px;
+    
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". IMAGE NAME ."
+      ". OCCUPAPTION BRIEF-DESCRIPTION ."
+      ". CONTACT-CONTENT EXPERTISE-TITLE ."
+      ". CONTACT-CONTENT EXPERTISE-CONTENT ."
+      ". CONTACT-CONTENT PROFESSIONAL-HISTORY-TITLE ."
+      ". CONTACT-CONTENT PROFESSIONAL-HISTORY-CONTENT ."
+      ". CONTACT-CONTENT EDUCATION-TITLE ."
+      ". CONTACT-CONTENT EDUCATION-CONTENT .";
+      color: #280959;
+      font-family: 'Roboto', sans-serif;
+
+}
+  
+.IMAGE {
+    grid-area: IMAGE; 
+}
+  
+.OCCUPAPTION {
+    grid-area: OCCUPAPTION; 
+    line-height: 0.8;
+    font-family: 'Press Start 2P', cursive;
+
+}
+  
+.CONTACT-TITLE {
+    grid-area: CONTACT-TITLE; 
+    text-align: center;
+    
+}
+.NAME {
+    grid-area: NAME; 
+    font-size: xx-large;
+    line-height: 0.7;
+    border-bottom-style: solid;
+    border-color: #280959;
+}
+  
+.BRIEF-DESCRIPTION {
+    grid-area: BRIEF-DESCRIPTION; 
+}
+  
+.EXPERTISE-TITLE {
+    grid-area: EXPERTISE-TITLE; 
+    font-size: larger;
+    border-bottom-style: solid;
+    border-color: #A0A29F;
+    font-family: 'Press Start 2P', cursive;
+}
+  
+.EXPERTISE-CONTENT {
+    grid-area: EXPERTISE-CONTENT; 
+    color: #A0A29F;
+}
+  
+.PROFESSIONAL-HISTORY-TITLE {
+    grid-area: PROFESSIONAL-HISTORY-TITLE; 
+    font-size: larger;
+    border-bottom-style: solid;
+    border-color: #A0A29F;
+    font-family: 'Press Start 2P', cursive;
+}
+  
+.PROFESSIONAL-HISTORY-CONTENT {
+    grid-area: PROFESSIONAL-HISTORY-CONTENT; 
+    color: #A0A29F;
+}
+  
+.CONTACT-CONTENT {
+    grid-area: CONTACT-CONTENT; 
+    background-image: linear-gradient(to bottom left, #6A55D5, #4999D6);
+    color: white;
+    text-align: center;
+}
+  
+.EDUCATION-CONTENT {
+    grid-area: EDUCATION-CONTENT;
+    color: #A0A29F; 
+}
+  
+.EDUCATION-TITLE {
+    grid-area: EDUCATION-TITLE; 
+    font-size: larger;
+    border-bottom-style: solid;
+    border-color: #A0A29F;
+    font-family: 'Press Start 2P', cursive;
+}
+.phone {
+    width: 30px;
+    height: auto;
+}
+.location {
+    width: 50px;
+    height: auto;
+}
+.mail {
+    width: 60px;
+    height: auto;
+
+}
+.logo {
+    width: 50px;
+    height: auto;
+}
+.pfp {
+    width: 300px;
+    height: auto;
+}
