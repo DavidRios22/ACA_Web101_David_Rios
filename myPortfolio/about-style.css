@@ -1,0 +1,132 @@
+body {
+    margin: 1vh;
+    background-color: #264653;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr) 1fr;
+    grid-template-areas: 
+    "title"
+    "about"
+    "boxes";
+    text-align: center;
+    color: #264653;
+    font-family: 'Arvo', serif;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "box1"
+    "box2"
+    "box3";
+}
+
+.title {
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2A9D8F;
+    font-size: 5vh;
+}
+
+.about {
+    grid-area: about;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A9D8F;
+    font-size: 3vh;
+}
+
+.boxes {
+    grid-area: boxes;
+}
+
+.box1, .box2, .box3 {
+    margin-top: 1vh;
+}
+
+.box1 {
+    background-color: #FF5722;
+    grid-area: box1;
+}
+
+.box2 {
+    background-color: #1573B3;
+    grid-area: box2;
+}
+
+.box3 {
+    background-color: #F7DF1E;
+    grid-area: box3;
+}
+
+@media (min-width: 576px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+        "title about"
+        "boxes boxes";
+    }   
+
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "box1 box2 box3";
+    }
+
+    .title {
+        height: 50vh;
+    }
+
+    .about {
+        height: 50vh;
+        font-size: 2vh;
+    }
+    
+    .box1, .box2, .box3 {
+        margin-top: 1vh;
+        margin-left: 0.5vh;
+        margin-right: 0.5vh;
+        font-size: 2.5vh;
+    }
+
+
+    
+}
+
+@media (min-width: 992px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+        "title about"
+        "boxes boxes";
+    }  
+    
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "box1 box2 box3";
+    }
+
+    .about {
+        font-size: 3vh;
+    }
+    .box1, .box2, .box3 {
+        font-size: 4.5vh;
+    }
+}
