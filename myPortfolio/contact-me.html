@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wnameth=device-wnameth, initial-scale=1.0">
+    <link rel="stylesheet" href="contact-me.css">
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <form class="container" action="contact-me-results.html" method="GET" enctype="multipart/form-data">
+
+        <h1 id="title">Contact Me</h1>
+
+        <div class="email">
+            <input class="emails" placeholder="Email" type="email" name="email" required></input>
+        </div>
+
+        <div class="comments">
+            <textarea id="comments" placeholder="Comments" name="comments" minlength="20" maxlength="500"></textarea>
+        </div>
+
+        <div class="checkbox">
+            <h3>How did you hear about me?</h3>
+
+            <div class="classmates">
+                <label for="classmates">Classmate</label>
+                <input class="check" name="How did you hear about me?" value="classmates" type="checkbox">
+            </div>
+
+            <div class="resume">
+                <label for="resume submission?">Resume Submission</label>
+                <input class="check" name="How did you hear about me?" value="resume submission" type="checkbox">
+            </div>
+
+            <div class="linkedin">
+                <label for="linkedin?">LinkedIn</label>
+                <input class="check" name="How did you hear about me?" value="linkedin" type="checkbox">
+            </div>
+
+            <div class="academy">
+                <label for="coding academy reccomendation">Coding Academy Reccomendation</label>
+                <input class="check" name="How did you hear about me?" value="coding academy reccomendation" type="checkbox">
+            </div>
+        </div>
+
+        <div class="contact-back">
+            <h3>Would you like to be contacted back?</h3>
+            <div class="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" value="yes" name="Would you like to be contacted back?">
+            </div>
+
+            <div class="no">
+                <label for="no">No</label>
+                <input type="radio" value="no" name="Would you like to be contacted back?">
+            </div>
+        </div>
+
+        <div class="birthday">
+            <h3>Optional Birthday Wish?</h3>
+            <input class="date" type="date" name="date" min="1923-01-17">
+          </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn" ype="reset">Reset</button>
+            <button class="btn" type="submit">Submit</button>
+        </div>
+    
+
+    </form>
+</body>
+</html>

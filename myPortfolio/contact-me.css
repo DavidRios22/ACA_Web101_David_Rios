@@ -1,0 +1,207 @@
+body {
+    background-color: #CCD5AE;
+    margin: 0;
+    color: black;
+    height: 100vh;
+    font-size: 4.7vw;
+}
+
+#title {
+    grid-area: title;
+    size: 1vw;
+}
+
+
+input.emails, #comments {
+    width: 30vw;
+    height: 4vw;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(6fr);
+    grid-template-areas: 
+    "title"
+    "email"
+    "comments"
+    "checkbox"
+    "contact-back"
+    "birthday"
+    "buttons";
+    text-align: center;
+}
+
+.email {
+    grid-area: email;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.comments {
+    grid-area: comments;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    grid-area: checkbox;
+
+}
+
+.contact-back {
+    grid-area: contact-back;
+
+}
+
+.birthday {
+    grid-area: birthday;
+    margin: auto;
+}
+
+.classmates, .resume, .linkedin, .academy, .no, .yes, .date, input{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.date {
+    padding: 0;
+    margin: auto;
+    width: 30vw;
+    margin-bottom: 20px;
+}
+
+input {
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #D4A373;
+    background-color: #E9EDC9;
+    color: #D4A373;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #D4A373;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+}
+
+input[type="radio"]:checked {
+    background-color: #D4A373;
+}
+
+textarea {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #D4A373;
+    background-color: #E9EDC9;
+    color: #D4A373;
+    resize: none;
+    transition-duration: 0.4s;
+}
+
+
+button {
+    margin: auto;
+    margin-top: 10px;
+    width: 50vw;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #D4A373;
+    background-color: #E9EDC9;
+    color: #D4A373;
+}
+.btn:hover {
+    
+    background-color: #D4A373;
+    color: #E9EDC9;
+}
+
+.buttons {
+    grid-area: buttons;
+}
+
+@media (min-width: 576px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "title title"
+        "email email"
+        "comments comments" 
+        "checkbox contact-back"
+        "birthday birthday"
+        "buttons buttons";
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    .comments, .email {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .birthday {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        font-size: 2vw;
+    }
+
+    .buttons {
+        display: inline-flex;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        height: 2vw;
+        width: 40vw;
+    }
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+}
